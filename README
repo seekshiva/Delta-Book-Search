@@ -1,0 +1,12 @@
+README
+=======
+This search engine is used to index files in your server 
+and enables you to search it at ease. The following 
+points have to be noted before you use the search engine :
+
+(*) When you're using the search engine for the first time,
+go to the ./install/ directory to start the installation 
+process. This might take a while.
+
+(*) Once this is done, you can go to the search engine and 
+begin by entering your search term.
