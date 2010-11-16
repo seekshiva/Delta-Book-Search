@@ -1,0 +1,56 @@
+body {margin:0;font-family:'lucida grande', tahoma, veranda, arial, sans-serif; font-size:11pt; margin-bottom:10px; }
+h3 {margin-bottom:0;}
+a {color:#385998; text-decoration:none;}
+a:hover {text-decoration:underline;}
+input[type=text] {padding:2px; font-size:medium;}
+th {text-align:right;}
+#menu {z-index:-5; float:right; margin:0; }
+#menu>div {float:right; padding-top:7px }
+#menu a {color:#f1f1f1; font-size:13px; font-weight:bold; padding:8px; }
+#menu a:hover {text-decoration:none; background-color:#6B84B7; color:#fff; }
+#pSettings {position:absolute; padding:10px; background-color:#fff; border:1px solid #3B5998; margin-top:6px; margin-left:22px; font-size:9pt; width:140px; }
+#pSettings a {color:#3B5998; padding:0; cursor:pointer; }
+#pSettings a:hover {color:#3B5998; background-color:#fff; text-decoration:underline; }
+
+#bluebar {background-color:#3B5998; height:41px; left:0px; position:absolute; width:100%; z-index:-1; }
+#topQ {font-size:11px; height:13px; padding:3px; padding-left:5px; padding-right:22px; color:gray; border:0;}
+#topQ:hover {color:#444;}
+#topQ:focus {color:#000;}
+
+#topAutoSuggest {background-color:#fff; border:1px solid #aaa; width:278px; margin:0; margin-top:-2px; position:absolute; }
+.suggestion {padding:2px; height:30px; padding:10px; font-size:11px; font-weight:bold; }
+.suggestion:hover {background-color:#3B5998; color:#fff; }
+#selectedSuggestion {background-color:#3B5998; color:#fff; }
+
+.resultHead .searchstr { font-style:italic; }
+.resultSnippet>div:first-child .searchstr {color:#000; }
+.uri .searchstr { font-weight:bold; color:#009800 }
+
+#wrapper {width:941px; margin:0 auto;}
+#pageHead {margin:0px; width:auto; padding-top:10px;}
+#headerC {padding-left:180px; }
+#header {background-color:#627AAD; padding:6px; }
+#pageLogo {float:left;}
+#pageLogo a {background-color:#3B5998; background-image:url(../images/delta-logo-facebook.jpg); height:31px; width:103px; display:block;}
+.b {font-weight:bold;}
+.p {cursor:pointer;}
+#pageBody {width:727px; margin-left:180px; padding:15px; padding-top:1px; border:2px solid #d9d3c3; border-top:0; text-align:justify; font-size:small; }
+#searchResults {width:500px; font-size:11px; color:#333;}
+.resultlet {border-bottom:1px solid #b9b3a3; padding-top:5px; padding-bottom:5px;}
+.resultlet:last-child {border-bottom:0;}
+#searchPageList {margin:30px; text-align:center; font-weight:bold; font-size:medium; }
+#searchPageList a {padding:2px; background-color:#D8DFEA; color:#3B5998; }
+#searchPageList a:hover {background-color:#669; color:#D8DFEA; text-decoration:none; }
+.resultTitle {font-size:medium; text-align:left;}
+.resultHead {font-size:13px; color:#333;}
+.resultSnippet {padding-left:75px; color:gray;}
+#resultCount {font-size:x-small;}
+.noAColored a {color:#0000ee}
+.cacheImportant {color:red; background-color:#ccc; padding:2px;}
+#cacheMetaData {margin:10px;}
+.filetype {color:#2200C1; font-size:x-small; cursor:pointer; }
+.uri { color:#00a800; font-size:90%; display:inline; text-align:left; }
+#bottomQC {display:none;}
+
+#footer {text-align:left; margin-bottom:50px; padding:5px; margin-left:180px; font-size:11px; color:gray;}
+#aboutText {float:right; }

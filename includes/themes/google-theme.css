@@ -1,0 +1,41 @@
+body {margin:0;font-family:'arial'; font-size:11pt; }
+h3 {margin-bottom:0;}
+a {color:#03c; text-decoration:none;}
+a:hover {text-decoration:underline;}
+input[type=text] {padding:2px; font-size:medium;}
+th {text-align:right;}
+#menu {border-bottom:#c3d7f9 1px solid; padding:0px; padding:1px; padding-left:8px; font-size:13px; }
+#menu a {text-decoration:underline; color:#00C;}
+#pSettings {position:absolute; padding:10px; background-color:#fff; border:1px solid #3B5998; margin-top:6px; margin-left:22px; font-size:9pt; width:140px; }
+#pSettings a {color:#3B5998; padding:0; cursor:pointer; }
+#pSettings a:hover {color:#3B5998; background-color:#fff; text-decoration:underline; }
+
+#pageHead {margin:0px; width:auto;}
+#pageLogo {float:left; margin-left:14px; margin-right:14px; }
+#pageLogo a {background-image:url(../images/delta-logo-google.png); height:65px; width:125px; display:block;}
+#topQ {font-size:18px; padding:3px; border:1px solid #aaa; margin:15px; width:500px; margin-bottom:2px; padding-left:6px; padding-right:10px; vertical-align:top;}
+
+#topAutoSuggest {border:1px solid #aaa; width:516px; margin:0; margin-top:-2px; margin-left:168px; }
+.suggestion {padding:2px; }
+.suggestion:hover {background-color:#c3d7f9; }
+#selectedSuggestion {background-color:#c3d7f9; }
+
+#bottomQ {font-size:18px; padding:3px; border:1px solid #aaa; width:500px; margin-bottom:2px; padding-left:6px; padding-right:10px; s-align:top;}
+.b {font-weight:bold;}
+.p {cursor:pointer;}
+
+.resultHead .searchstr { font-style:italic; }
+.resultSnippet>div:first-child .searchstr { font-weight:bold; background-color:#e7e7ff; }
+.uri .searchstr { font-weight:bold; color:#009800 }
+
+#searchResults {width:600px; margin-left:160px; padding:15px; padding-top:1px; border-left:1px solid #D3E1F9; text-align:left; font-size:small; }
+.resultTitle {font-size:medium; margin-top:20px; margin-bottom:5px; text-align:left;}
+#resultCount {margin-left:170px; padding:5px; padding-bottom:10px; display:block; font-size:x-small;}
+#searchPageList {margin:20px; margin-left:300px; font-size:medium;}
+.noAColored a {color:#0000ee}
+.cacheImportant {color:red; background-color:#ccc; padding:2px;}
+#cacheMetaData {margin:10px;}
+.filetype {color:#2200C1; font-size:x-small; cursor:pointer; }
+.uri { color:#00a800; font-size:90%; display:inline; text-align:left;}
+#footer {text-align:center; margin:50px;}
+#footer a {color:#4272DB;}
