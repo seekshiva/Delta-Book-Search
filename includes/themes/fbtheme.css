@@ -43,6 +43,8 @@ th {text-align:right;}
 #searchPageList a:hover {background-color:#669; color:#D8DFEA; text-decoration:none; }
 .resultTitle {font-size:medium; text-align:left;}
 .resultHead {font-size:13px; color:#333;}
+.resultlet:hover a {color:#3859c8;}
+.resultlet a:hover {color:#3859f8}
 .resultSnippet {padding-left:75px; color:gray;}
 #resultCount {font-size:x-small;}
 .noAColored a {color:#0000ee}

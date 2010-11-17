@@ -73,7 +73,7 @@ $fid=$row['file_id'];
 	$cont[$fid]=$row['cont'];
 	}
 	for($i=$start;$i<min(count($arr),$start+$resultsPerPage);$i+=1)	
-	echo "<div class=\"resultlet\"><div class=\"resultTitle b p\"><span class=\"filetype\">[".getFileType($arr[$i])."]</span> <span class=\"resultHead\">".highlight(getFileName($arr[$i]),$q)."</span></div><div class=\"resultSnippet\"><div>...".highlight(getAptContent($arr[$i],$q),$q)."...</div><span class=\"uri\">".highlight(getUri($arr[$i]),$q)."</span> - <a href=\"./?q=".str_replace(' ','+',$q)."&viewcache=$arr[$i]\" target=\"_blank\">Cached</a></div></div>";
+	echo "<div class=\"resultlet\"><div class=\"resultTitle b p\"><span class=\"filetype\">[".getFileType($arr[$i])."]</span> <span class=\"resultHead\">".highlight(getFileName($arr[$i]),$q)."</span></div><div class=\"resultSnippet\"><div>...".highlight(getAptContent($arr[$i],$q),$q)."...</div><span class=\"uri\">".highlight(getUri($arr[$i]),$q)."</span> - <a href=\"./?q=".str_replace(' ','+',$q)."&viewcache=$arr[$i]\" target=\"_blank\">Cached</a> - <a href=\"http://".getUri($arr[$i])."\">Download</a></div></div>";
 	echo "</div><div id=\"searchPageList\">";
 	$pStart=($start/$resultsPerPage-5<0)?1:$start/$resultsPerPage-4;
 	$pEnd=($start/$resultsPerPage+10<($resultCount/$resultsPerPage))?$start/$resultsPerPage+10:($resultCount/$resultsPerPage)+1;
