@@ -5,7 +5,7 @@
 	function checkbooks() {
 		echo "The following books have been newly detected. Select the books you want to index now and click the <b>Add</b> button.<hr><table id=\"detectTable\" border='1' cellspacing='0'>";
 		echo "<tr><th>File path</th><th>File Name</th></tr>";
-		checkNewFiles("/home/seek/Desktop");
+		checkNewFiles("/home/seek/Desktop/Books");
 		echo "</table>";
 	}
 	if(isset($_GET['action'])) {
