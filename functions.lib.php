@@ -8,8 +8,9 @@
  */
 /** To connect to the database*/
 function connect() {
-	$con=mysql_connect("localhost","seek","seek") or die("Could not connect to server");
-	mysql_select_db("a",$con) or die("Could not connect to database");
+	include("config.inc.php");
+	$con=mysql_connect($dbs_host,$dbs_dbuname,$dbs_dbpass) or die("Could not connect to server");
+	mysql_select_db($dbs_dbname,$con) or die("Could not connect to database");
 	return $con;
 }
 
@@ -40,13 +41,13 @@ function search($q) {
 	$resultsPerPage=10;
 	$start=(isset($_GET['start'])&&($_GET['start']!=""))?$_GET['start']:1;
 	$start=($start-1)*$resultsPerPage;
-	$query1="SELECT distinct `file_id`, 10 AS relevance FROM `documents` WHERE `file_name` LIKE '%$q%'";
-	$query2="SELECT distinct `file_id`, 8 AS relevance FROM `documents` WHERE `file_name` LIKE '%".str_replace(" ","%",$q)."%' OR `path` LIKE '%".str_replace(" ","%",$q)."%'";
-	$query3="SELECT distinct `file_id`, 5 AS relevance FROM `doc_contents` where content like '%$q%'";
-	$query4="SELECT distinct `file_id`, 2 AS relevance FROM `doc_contents` where content like '%".str_replace(" ","%",$q)."%'";
+	$query1="SELECT `file_id`, 10 AS relevance FROM `documents` WHERE `file_name` LIKE '%$q%'";
+	$query2="SELECT `file_id`, 8 AS relevance FROM `documents` WHERE `file_name` LIKE '%".str_replace(" ","%",$q)."%' OR `path` LIKE '%".str_replace(" ","%",$q)."%'";
+	$query3="SELECT `file_id`, 5 AS relevance FROM `doc_contents` where `content` like '%$q%'";
+	$query4="SELECT `file_id`, 2 AS relevance FROM `doc_contents` where content like '%".str_replace(" ","%",$q)."%'";
 	$query="SELECT `file_id`,sum(relevance) from ( ".$query1." UNION ".$query2." UNION ".$query3.") results GROUP BY `file_id` ORDER BY relevance DESC;";
 
-//echo ;
+echo $query;
 	$startTime= (time()+microtime());
 	$result=mysql_query($query);
 	$endTime= (time()+microtime());
